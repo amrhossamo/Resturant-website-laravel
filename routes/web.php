@@ -7,6 +7,7 @@ use App\Http\Controllers\ItemsController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\UserssController;
+use App\Http\Middleware\adminauth;
 use App\Models\Bookings;
 use App\Models\userss;
 use Illuminate\Support\Facades\Route;
@@ -21,9 +22,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('test',function(){
-    return view('test');
-});
+Route::get('adpanel',function(){
+    return view('adpanel');
+})->middleware('adminauth');
 
 Route::get('profile',function(){
     return view('sections.profile');
