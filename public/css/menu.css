@@ -1,0 +1,65 @@
+.menu{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu h1{
+    color: var(--Neutral-07, #2C2F24);
+    text-align: center;
+    /* Headline/H1 */
+    font-family: Playfair Display;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px; /* 96% */
+}
+.menu p{
+    width: 557px;
+    color: var(--Neutral-06, #495460);
+    text-align: center;
+
+
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+}
+
+.varity{
+    display: flex;
+    justify-content: center;
+     gap: 15px;
+}
+.varity a{
+    
+    display: flex;
+width: 150px;
+height: 48px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 50px;
+border: 1px solid  #DBDFD0;
+color:  #2C2F24;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+    
+}
+.card-body .h5{
+    color: #AD343E !important;
+text-align: center;
+
+/* Headline/H3 */
+font-family: DM Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px; /* 125% */
+letter-spacing: -0.72px;
+}

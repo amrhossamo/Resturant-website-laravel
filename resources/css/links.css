@@ -1,0 +1,92 @@
+.links{
+    display: flex;
+    align-items: center;
+    margin: 500px;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+:root{
+    --blue: #0046fd;
+    --white: #fff;
+    --lightblue: #b3bbd1;
+    --gary: #e5e5e5;
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Muli', sans-serif;
+}
+body{height: 100vh;}
+
+.sidebar{
+    width: 20%;
+    float: left;
+    background: var(--blue);
+    height: 100vh;
+    position: relative;
+}
+.logo{
+    text-align: center;
+    color: var(--white);
+    margin-top: 50px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.nav{display: flex;     flex-direction: column; margin-left: 40px;}
+.nav li {
+    list-style: none;
+    padding: 16px 19px;
+}
+.nav li i {margin-right: 10px;}
+.nav li a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+.active{
+    
+    background: var(--white);
+    border-radius: 27px;
+    position: relative;
+}
+.nav > .active::before, .nav > .active::after{
+    content: ""; 
+    position: absolute;
+}
+
+.nav > .active::before{
+    top: -80px;
+    right: -2px;
+    height: 80px;
+    width: 25px;
+    border-bottom-right-radius: 80px;
+    box-shadow: 0 40px 0 0 var(--white);
+    transform: rotateZ(360deg);
+}
+.nav > .active::after{
+    top: 56px;
+    right: -2px;
+    height: 80px;
+    width: 25px;
+    border-top-right-radius: 80px;
+    box-shadow: 0 -40px 0 0 var(--white);
+    transform: rotateZ(360deg);
+}
+.active a{color: var(--blue) !important;}
+
+
+
+@media screen and (max-width:986px)
+{
+    .sidebar
+    {
+    width: 100vh;
+    }
+    .logo{
+        font-size: 50px;
+        margin-top: 0px;
+    }
+}

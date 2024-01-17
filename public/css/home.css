@@ -1,0 +1,214 @@
+/* Home Baner */
+.home-baner{
+    background-image: url('../images/menu/home-banner.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.banner-title h1{
+    width: 667px;
+    color:  #2C2F24;
+text-align: center;
+
+/* Headline/H1 */
+font-family: Playfair Display;
+font-size: 100px;
+font-style: normal;
+font-weight: 400;
+line-height: 96px; /* 96% */
+    
+}
+.banner-title p{
+    width: 537px;
+    color: #2C2F24;
+text-align: center;
+margin-left: 50px;
+
+/* Body/20px/Regular */
+font-family: DM Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 160% */
+}
+.btn-coustom{
+    display: flex;
+padding: 20px 32px !important;
+justify-content: center;
+align-items: center;
+gap: 10px;
+    border-radius: 118px!important;
+    
+
+}
+
+@media  (max-width:950px) {
+    .banner-title h1{
+        width: 400px;
+        color:  #2C2F24;
+        
+    
+    /* Headline/H1 */
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    
+        
+    }
+
+    .banner-title p{
+        width: 300px;
+        color: #2C2F24;
+        justify-content: center;
+    text-align: center;
+    
+    /* Body/20px/Regular */
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    }
+    .btn-coustom{
+        display: flex;
+    padding: 10px 20px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+        border-radius: 118px!important;
+        
+    
+    }
+
+}
+    
+
+
+
+
+
+
+
+/* menu */
+.br-menu h2{
+    margin-bottom: 50px;
+    color:  #2C2F24;
+text-align: center;
+/* Headline/H2 */
+font-family: Playfair Display;
+font-size: 55px;
+font-style: normal;
+font-weight: 500;
+line-height: 60.5px; /* 110% */
+
+}
+.card{
+    
+    border-radius: 12px;
+border: 1.5px solid #DBDFD0;
+background:  #FFF;
+width: 306px !important;
+height: fit-content;
+flex-shrink: 0;
+}
+.card-det{
+    display: inline-flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+
+h2{
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60.5px;
+    color: #2C2F24;
+    text-align: center;
+}
+
+.card img{
+    width: 80px;
+    padding-top: 30px;
+}
+.product-card {
+padding: 10px 15px;
+margin-bottom: 20px;
+align-items: center;
+border: 1.5px solid #DBDFD0 !important;
+border-radius: 12px !important;
+width: 23%;
+
+}
+
+.card-body .btn{
+    padding: 13px;
+    border-radius: 20px;
+    width: 13rem;
+    color: #AD343E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+.c-t{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    color: #414536;
+}
+.card-title a{
+    text-decoration: none;
+    color: #2C2F24;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+    letter-spacing: -0.72px;
+}
+.card-body h5{
+    color: #000000 !important;
+    text-align: center;
+    font-family: DM Sans !important;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.72px;
+}
+
+
+  
+/* services */
+
+.services-title h2{
+   
+    width: 675px;
+    color: var(--Neutral-07, #2C2F24);
+
+/* Headline/H2 */
+font-family: Playfair Display;
+font-size: 55px;
+font-style: normal;
+font-weight: 500;
+line-height: 60.5px; /* 110% */
+}
+@media (max-width:950) {
+    .services-title h2{
+   
+        width: 400px;
+        color: var(--Neutral-07, #2C2F24);
+    
+    /* Headline/H2 */
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-style: normal;
+    font-weight:300;
+    line-height:30px ; /* 110% */
+    }
+}
