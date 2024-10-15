@@ -4,8 +4,8 @@
 
 
 @section('cont')
-<table class="w-75 container table table-dark table-striped ">
-        <tr>
+<table  class="w-75 container table table-dark table-striped ">
+        <tr >
              <th>ID</th>
              <th>Name</th>
              <th>Image</th>

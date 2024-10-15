@@ -65,7 +65,7 @@ Route::post('contact/insert',[ContactController::class, 'insert'])->name('contac
 Route::get('viewmessages',[ContactController::class , 'contactshow'])->name('contact.show')->middleware('adminauth');
 
 
-
+// jetstream auth
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

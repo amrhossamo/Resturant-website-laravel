@@ -189,7 +189,7 @@ width: 23%;
 .services-title h2{
    
     width: 675px;
-    color: var(--Neutral-07, #2C2F24);
+    color:  #2C2F24;
 
 /* Headline/H2 */
 font-family: Playfair Display;
@@ -198,11 +198,11 @@ font-style: normal;
 font-weight: 500;
 line-height: 60.5px; /* 110% */
 }
-@media (max-width:950) {
+@media (max-width:990) {
     .services-title h2{
    
-        width: 400px;
-        color: var(--Neutral-07, #2C2F24);
+        width: 200px;
+        color:  #2C2F24;
     
     /* Headline/H2 */
     font-family: Playfair Display;
@@ -211,4 +211,50 @@ line-height: 60.5px; /* 110% */
     font-weight:300;
     line-height:30px ; /* 110% */
     }
+}
+
+
+
+/* blog  */
+.blogs{
+
+    width: 100rem;
+height: 69.8125rem;
+flex-shrink: 0;
+background:  #F9F9F7;
+}
+.blog-title{
+    display: flex;
+width: 81rem;
+justify-content: space-between;
+align-items: center;
+}
+
+.big{
+    width: 39.75rem;
+    height: 45.75rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+border: 1px solid var(--Neutral-02, #F9F9F7);
+background: var(--Neutral-01, #FFF);
+
+/* 1 */
+box-shadow: 0px 2.979px 59.574px 0px rgba(0, 0, 0, 0.08);
+}
+.small{
+    width: 19.125rem;
+height: 22.125rem;
+flex-shrink: 0;
+border-radius: 0.75rem;
+border: 1px solid var(--Neutral-02, #F9F9F7);
+background: var(--Neutral-01, #FFF);
+
+/* 1 */
+box-shadow: 0px 2.979px 59.574px 0px rgba(0, 0, 0, 0.08);
+}
+.cardss{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
 }

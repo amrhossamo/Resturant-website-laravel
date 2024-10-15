@@ -76,35 +76,28 @@
                 <a href="#" class="nav-item nav-link">Pages</a>
           
                 <a href="/contact" class="nav-item nav-link">Contact</a>
-         
-             @if (Route::has('login'))
-
-             @auth
-             <li class="nav-item dropdown pt-4"> <span>{{ auth()->user()->unreadNotifications->count() }} </span>
+                @if (Route::has('login'))
+                @auth
+                   <li class="nav-item dropdown mt-4">
+                    {{ auth()->user()->unreadNotifications->count() }} 
                         <a class=" " href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                  <i class="fa-regular fa-bell"></i>
                               </a>
                                 <br>
-
-                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown" >
-                          <h5>Notification ( {{ auth()->user()->unreadNotifications->count() }} )</h5>
-                    @foreach  (auth()->user()->unreadNotifications as $notification) 
-                        <li>
-                            <p >{{ $notification->data['status'] }} </p>
-                            <p>{{ $notification->created_at->diffForHumans() }}</p>
-                            <hr>
-                        </li>
-                    @endforeach
-                   </ul> 
-              </li>
-              @endauth
-
-             @else
- 
-
-
-
-             @endif
+                    </a>
+                    <ul class="dropdown-menu">
+                       @foreach  (auth()->user()->unreadNotifications as $notification) 
+                      <li><a class="dropdown-item" href="#">{{ $notification->data['status'] }}</a></li>
+                      <li><a class="dropdown-item" href="#">{{ $notification->created_at->diffForHumans() }}</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      @endforeach
+                    </ul>
+                  </li>
+                  @endauth
+                  @else
+                  @endif
+         
+       
 
       
             </div>  
