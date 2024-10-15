@@ -10,18 +10,6 @@
             "dest": "/api/index.php"
         }
     ],
-    
-        "builds": [
-          {
-            "src": "vite.config.js",
-            "use": "@vercel/static-build",
-            "config": {
-              "distDir": "dist" 
-            }
-          }
-        ],
-     
-      
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
